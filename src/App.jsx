@@ -11,7 +11,7 @@ function App() {
       
       {/* <Landing /> */}
 
-      <LoginAnt />
+      <Login />
     </div>
   );
 }
