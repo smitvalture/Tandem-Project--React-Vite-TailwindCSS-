@@ -1,6 +1,7 @@
-import Header from './Header'
+import Header from '../components/Header'
 
 import Mission from './Mission'
+import Section1 from './Section1'
 
 const Landing = () => {
 
@@ -8,7 +9,7 @@ const Landing = () => {
     return (
         <div className=''>
             <Header />
-            <Mission />
+            <Section1 />
             
 
             
