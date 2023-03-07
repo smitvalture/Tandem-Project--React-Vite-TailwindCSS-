@@ -1,7 +1,6 @@
 import Header from '../components/Header'
-
-import Mission from './Mission'
-import Section1 from './Section1'
+import Section1 from '../components/Section1'
+import Section2 from '../components/Section2'
 
 const Landing = () => {
 
@@ -10,6 +9,7 @@ const Landing = () => {
         <div className=''>
             <Header />
             <Section1 />
+            <Section2 />
             
 
             

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from './images/tandem_logo.svg'
+import logo from '../pages/images/tandem_logo.svg'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div className=''>
-            <nav className={`sticky p-5 lap:flex lap:justify-between lap:items-center duration-300 lap:transition-none ${toggle ? 'bg-white' : 'bg-[#d7e5f2]'}`} id="navbar">
+            <nav className={`sticky p-5 lap:flex lap:justify-between lap:items-center duration-300 lap:transition-none ${toggle ? 'bg-cyan-300' : 'bg-transparent'}`} id="navbar">
                 <div className='max-w-[1240px]'>
                     <div className="flex justify-between items-center">
                         <a href="https://www.google.co.in"><img className="inline mx-2 h-7 tab:h-8 lap:h-auto" href="#" src={logo} alt="tandem-img" /></a>
@@ -47,8 +47,8 @@ const Header = () => {
                 </div>
 
                 {/* Responsive Menu    */}
-                <div className={`lap:hidden block fixed w-full duration-300 left-0 ${toggle ? 'top-[68px]' : 'top-[-340px]'}`}>
-                    <div className={`p-10 flex flex-col justify-center items-center bg-white`}>
+                <div className={`lap:hidden block absolute w-full duration-300 left-0 ${toggle ? 'top-[68px]' : 'top-[-340px]'}`}>
+                    <div className={`p-10 flex flex-col justify-center items-center bg-cyan-300`}>
                         {/* <ul className="space-y-4">
                             <li className="">
                                 <a href="#mission" className="text-lg font-medium hover:text-cyan-500 duration-500" onClick={() => setToggle(!toggle)}>Our mission</a>

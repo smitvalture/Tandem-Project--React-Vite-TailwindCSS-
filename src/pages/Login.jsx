@@ -1,7 +1,6 @@
 import React from 'react'
 import login_logo from './images/login-page-img.png'
-import Input from '../pages/Input'
-import Alerts from '../pages/Alerts'
+import Input from '../components/Input'
 import { useRef, useState } from "react";
 
 
