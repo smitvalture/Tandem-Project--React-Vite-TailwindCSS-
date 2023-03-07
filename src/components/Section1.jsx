@@ -21,7 +21,7 @@ const Section1 = () => {
 
     return (
         <section>
-            <div className='w-full h-[calc(100vh-70px)] tab:h-[calc(100vh-75px)] lap:h-[calc(100vh-80px)] flex justify-center items-center'>
+            <div className='w-full mt-[150px] mb-[150px] tab:mt-[100px] tab:mb-[100px] lap:mt-[150px] lap:mb-[150px] flex justify-center items-center'>
                 <div className='max-w-[1240px] lap:p-5 flex flex-col lap:flex-row place-content-center place-items-center space-y-8 lap:space-y-0'>
                     <div className='lap:space-y-32'>
                         <div className='flex flex-col items-center lap:items-start mr-5 w-full'>
