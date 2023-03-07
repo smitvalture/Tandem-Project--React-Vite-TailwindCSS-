@@ -1,7 +1,9 @@
 import React from 'react'
-import { IoClose } from "react-icons/io5";
 import login_logo from './images/login-page-img.png'
 import Input from '../pages/Input'
+import Alerts from '../pages/Alerts'
+import { useRef, useState } from "react";
+
 
 
 
@@ -53,15 +55,10 @@ const Login = () => {
                 </div>
 
                 {/* Error message */}
-                <div className='hidden'>
-                    <div className='border border-1 border-red-600 bg-red-200 w-60 tab:w-64 lap:w-72 h-fit p-1.5 flex items-center space-x-1'>
-                        <p className='text-red-800 text-[10px] lap:text-xs font-semibold'>Error:</p>
-                        <span className='text-red-600 text-[10px] lap:text-xs w-60'>You have entered incorrect login details.</span>
-                        <a href="#">
-                            <IoClose className='text-red-900' />
-                        </a>
-                    </div>
-                </div>
+                <Alerts
+                    trigger={true}  
+                    msg="You have an error."
+                />
 
                 <button
                     className="bg-[#15213A] hover:bg-[#1e3055] shadow-lg shadow-blue-900/70 hover:shadow-blue-900/40 text-gray-300 w-60 tab:w-64 lap:w-72 h-9 mx-auto rounded-md font-Poppins tracking-wide"
