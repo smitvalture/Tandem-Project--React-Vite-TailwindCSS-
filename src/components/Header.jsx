@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div className=''>
-            <nav className={`flxed p-5 lap:flex lap:justify-between lap:items-center duration-300 lap:transition-none ${toggle ? 'bg-cyan-300' : 'bg-transparent'}`} id="navbar">
+            <nav className={`sticky p-5 lap:flex lap:justify-between lap:items-center duration-300 lap:transition-none ${toggle ? 'bg-cyan-300' : 'bg-transparent'}`} id="navbar">
                 <div className='max-w-[1240px]'>
                     <div className="flex justify-between items-center">
                         <a href="https://www.google.co.in"><img className="inline mx-2 h-7 tab:h-8 lap:h-auto" href="#" src={logo} alt="tandem-img" /></a>
