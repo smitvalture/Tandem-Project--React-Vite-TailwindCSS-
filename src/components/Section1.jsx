@@ -36,6 +36,7 @@ const Section1 = () => {
 
                     <div className='w-full'>
                         <video
+                            controls
                             playsInline
                             loop
                             muted
