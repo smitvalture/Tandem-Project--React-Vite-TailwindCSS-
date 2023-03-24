@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import Player from './Player';
 
 
 
@@ -35,7 +36,7 @@ const Section1 = () => {
                     </div>
 
                     <div className='w-full'>
-                        <video
+                        {/* <video
                             controls
                             playsInline
                             loop
@@ -44,7 +45,8 @@ const Section1 = () => {
                             src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
                             ref={videoEl}
                             className='rounded-lg w-[350px] tab:w-[480px] lap:w-[520px] mx-auto'
-                        />
+                        /> */}
+                        <Player />
                     </div>
                 </div>
             </div>
